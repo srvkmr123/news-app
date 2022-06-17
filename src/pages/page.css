@@ -1,0 +1,11 @@
+.main{
+   
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}

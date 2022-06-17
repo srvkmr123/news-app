@@ -1,0 +1,19 @@
+.pages{
+    display: flex;
+    width: max-content;
+    margin: 10px auto;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.prev,.next{
+    padding-inline: 3px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.prev:hover,.next:hover{
+    background-color: rgb(58, 55, 55);
+}
