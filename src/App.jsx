@@ -8,9 +8,10 @@ import Entertainment from './pages/entertainment/Entertainment'
 import Technology from './pages/technology/Technology'
 import Error from './pages/error/Error'
 import './pages/page.css'
+import axios from 'axios'
 
 const App = () => {
-  
+  axios.defaults.headers.common['Access-Control-Allow-Origin']='*'
   return (
     <BrowserRouter>
         <Routes>
