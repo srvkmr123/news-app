@@ -18,7 +18,9 @@ const Home = () => {
       try{
         const date= new Date()
         const today=date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate()
-        let res=await axios.get(`https://newsapi.org/v2/everything?q=all&from=${today}&to=${today}&sortBy=popularity&apiKey=${process.env.REACT_APP_API_KEY}`)
+        let res=await axios.get(`https://newsapi.org/v2/everything?q=all&from=${today}&to=${today}&sortBy=popularity&apiKey=${process.env.REACT_APP_API_KEY}`,{
+         crossdomain:true
+        })
         setNews(res.data.articles)
         setScrollNews(res.data.articles.slice(0,scrollSize))
         setFetchedIndex(scrollSize-1)
